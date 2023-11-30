@@ -8,6 +8,14 @@ public class Percobaan2_06 {
             return (x * hitungPangkat(x, y - 1));
         }
     }
+    static void tampilDeretPangkat(int x, int y){
+        if (y == 0){
+            System.out.println("1");
+        } else {
+            System.out.print(x + "x");
+            tampilDeretPangkat(x, y - 1);
+        }
+    }
     public static void main(String[] args) {
         Scanner input01 = new Scanner(System.in);
         int bilangan, pangkat;
@@ -17,6 +25,9 @@ public class Percobaan2_06 {
         System.out.print("Pangkat : ");
         pangkat = input01.nextInt();
 
-        System.out.println("Hasil pangkat : " + hitungPangkat(bilangan, pangkat));
-    }            
+        System.out.println("Hasil pangkat : " + hitungPangkat(bilangan, pangkat));   
+
+        tampilDeretPangkat(bilangan, pangkat);
+    }
+            
 }
