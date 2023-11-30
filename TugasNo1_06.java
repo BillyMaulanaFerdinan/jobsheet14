@@ -23,7 +23,5 @@ public class TugasNo1_06 {
 
         System.out.println("\nMenggunakan iterarif : ");
         DescenIteratif(n);
-
-        sc.close();
     }
 }
