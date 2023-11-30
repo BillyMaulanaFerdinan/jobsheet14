@@ -17,13 +17,13 @@ public class Percobaan2_06 {
         }
     }
     public static void main(String[] args) {
-        Scanner input01 = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int bilangan, pangkat;
 
         System.out.print("Bilangan yang dihitung : ");
-        bilangan = input01.nextInt();
+        bilangan = sc.nextInt();
         System.out.print("Pangkat : ");
-        pangkat = input01.nextInt();
+        pangkat = sc.nextInt();
 
         System.out.println("Hasil pangkat : " + hitungPangkat(bilangan, pangkat));   
 
